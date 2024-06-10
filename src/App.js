@@ -1,6 +1,8 @@
+import { Wrapper } from "./Wrapper/styled";
+
 function App() {
   return (
-    "kekw"
+    <Wrapper>kekw</Wrapper>
   );
 }
 
