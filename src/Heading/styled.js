@@ -10,6 +10,7 @@ export const Header = styled.header`
     "picture description"
   ;
   grid-column-gap: 72px;
+  margin: 0 0 72px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     grid-template-areas:
@@ -18,6 +19,10 @@ export const Header = styled.header`
     ;
     grid-column-gap: 0px;
     grid-row-gap: 16px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    margin-bottom: 48px;
   }
 `;
 
