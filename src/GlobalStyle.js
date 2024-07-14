@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: "Inter", sans-serif;
+    color: ${({ theme }) => theme.color.black};
     background-color: ${({ theme }) => theme.color.bgLightMode};
     display: flex;
     align-items: center;
