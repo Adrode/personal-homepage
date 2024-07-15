@@ -39,15 +39,25 @@ export const StyledList = styled.ul`
   padding: 32px 0 0 0;
   list-style: none;
 
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 8px;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 8px;
-  max-height: 256px;
   
   color: ${({ theme }) => theme.color.textSecondary};
   font-size: 18px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 32px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    padding-top: 12px;
+    grid-template-columns: auto;
+
+    font-size: 14px;
+  }
 `;
 
 export const StyledItem = styled.li`

@@ -22,3 +22,12 @@ export const skillset = [
   "React",
   "Git"
 ];
+
+export const nextToLearn = [
+  "TypeScript",
+  "Node.js",
+  "React Context",
+  "Cypress",
+  "Unit testing",
+  "JS Classes"
+];

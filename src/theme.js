@@ -10,6 +10,7 @@ export const theme = {
     blackText: "#252525",
   },
   breakpoint: {
+    big: "1024px",
     medium: "768px",
     small: "480px",
   },
