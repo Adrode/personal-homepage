@@ -1,7 +1,7 @@
 import { Wrapper } from "./Wrapper/styled";
 import { Heading } from "./Heading";
 import { List } from "./List";
-
+import { GithubTile } from "./GithubTile";
 import { skillset, nextToLearn } from "./utils/listsContent";
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
         headerEmoji={"🚀"}
         listContent={nextToLearn}
       />
+      <GithubTile />
     </Wrapper>
   );
 }
