@@ -9,6 +9,10 @@ export const Container = styled.section`
   &:hover {
     border: 6px solid ${({ theme }) => theme.color.blueTransparent};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    padding: 24px;
+  }
 `;
 
 export const Header = styled.h3`
@@ -17,6 +21,11 @@ export const Header = styled.h3`
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   font-size: 24px;
   color: ${({ theme }) => theme.color.mainBlueLM};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
 `;
 
 export const Description = styled.p`
@@ -25,6 +34,12 @@ export const Description = styled.p`
   font-size: 18px;
   line-height: 25.2px;
   color: ${({ theme }) => theme.color.textSecondary};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 16.9px;
+  }
 `;
 
 export const LinkContainer = styled.div`
@@ -43,6 +58,10 @@ export const LinkDescription = styled.p`
 
   font-size: 18px;
   color: ${({ theme }) => theme.color.textSecondary};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    font-size: 14px;
+  }
 `;
 
 export const LinkURLContainer = styled.div`
@@ -62,5 +81,9 @@ export const LinkURL = styled.a`
 
   &:hover {
     border-bottom: 1px solid ${({ theme }) => theme.color.mainBlueLM};
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    font-size: 14px;
   }
 `;
