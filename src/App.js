@@ -1,8 +1,8 @@
+import { skillset, nextToLearn } from "./utils/listsContent";
 import { Wrapper } from "./Wrapper/styled";
 import { Heading } from "./Heading";
 import { List } from "./List";
-import { GithubTile } from "./GithubTile";
-import { skillset, nextToLearn } from "./utils/listsContent";
+import { Projects } from "./Projects";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         headerEmoji={"🚀"}
         listContent={nextToLearn}
       />
-      <GithubTile />
+      <Projects />
     </Wrapper>
   );
 }
