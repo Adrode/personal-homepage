@@ -3,6 +3,7 @@ import { Wrapper } from "./Wrapper/styled";
 import { Heading } from "./Heading";
 import { List } from "./List";
 import { Projects } from "./Projects";
+import { Footer } from "./Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         listContent={nextToLearn}
       />
       <Projects />
+      <Footer />
     </Wrapper>
   );
 }
