@@ -4,14 +4,10 @@ import {
   Header,
   Subheader,
 } from "./styled";
-import githubLogo from "../../images/githubLogo.svg";
 
 export const Banner = () => (
   <Container>
-    <Logo
-      src={githubLogo}
-      alt={"GitHub Logo"}
-    />
+    <Logo />
     <Header>
       Portfolio
     </Header>

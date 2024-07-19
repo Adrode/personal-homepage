@@ -4,7 +4,10 @@ import {
   Description,
   EmailContact,
   SocialmediaContainer,
+  SocialmediaLink,
   GithubImage,
+  LinkedinImage,
+  InstagramImage,
 } from "./styled";
 
 export const Footer = () => (
@@ -25,7 +28,27 @@ export const Footer = () => (
       need some help to make your ideas come to life, feel free to contact me.
     </Description>
     <SocialmediaContainer>
-      <GithubImage />
+      <SocialmediaLink
+        href={"https://github.com/Adrode"}
+        target={"_blank"}
+        rel={"noreferrer noopener"}
+      >
+        <GithubImage />
+      </SocialmediaLink>
+      <SocialmediaLink
+        href={"https://github.com/Adrode"}
+        target={"_blank"}
+        rel={"noreferrer noopener"}
+      >
+        <LinkedinImage />
+      </SocialmediaLink>
+      <SocialmediaLink
+        href={"https://github.com/Adrode"}
+        target={"_blank"}
+        rel={"noreferrer noopener"}
+      >
+        <InstagramImage />
+      </SocialmediaLink>
     </SocialmediaContainer>
   </Container>
 );

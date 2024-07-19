@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as GithubLogo } from "../../images/githubLogo.svg";
 
 export const Container = styled.section`
   display: flex;
@@ -6,12 +7,15 @@ export const Container = styled.section`
   align-items: center;
 `;
 
-export const Logo = styled.img`
+export const Logo = styled(GithubLogo)`
   margin: 0 0 12px 0;
   width: 40px;
+  height: 40px;
+  color: ${({ theme }) => theme.color.mainBlueLM};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     width: 32px;
+    height: 32px;
   }
 `;
 

@@ -14,6 +14,7 @@ export const Container = styled.section`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    margin-bottom: 48px;
     grid-gap: 16px;
   }
 `;
