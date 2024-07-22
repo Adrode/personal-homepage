@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.section`
   padding: 56px;
@@ -13,6 +13,14 @@ export const Container = styled.section`
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     padding: 24px;
   }
+
+  ${({ $dark }) => $dark && css`
+    border: 6px solid ${({ theme }) => theme.color.semiGrey};
+
+    &:hover {
+      border: 6px solid ${({ theme }) => theme.color.blueTransparentDM};
+    }
+  `}
 `;
 
 export const Header = styled.h3`
@@ -26,6 +34,10 @@ export const Header = styled.h3`
     margin-bottom: 16px;
     font-size: 16px;
   }
+
+  ${({ $dark }) => $dark && css`
+    color: ${({ theme }) => theme.color.white};
+  `}
 `;
 
 export const Description = styled.p`
@@ -40,6 +52,10 @@ export const Description = styled.p`
     font-size: 14px;
     line-height: 16.9px;
   }
+
+  ${({ $dark }) => $dark && css`
+    color: ${({ theme }) => theme.color.white};
+  `}
 `;
 
 export const LinkContainer = styled.div`
@@ -62,6 +78,10 @@ export const LinkDescription = styled.p`
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     font-size: 14px;
   }
+
+  ${({ $dark }) => $dark && css`
+    color: ${({ theme }) => theme.color.white};
+  `}
 `;
 
 export const LinkURLContainer = styled.div`
@@ -86,4 +106,12 @@ export const LinkURL = styled.a`
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     font-size: 14px;
   }
+
+  ${({ $dark }) => $dark && css`
+    color: ${({ theme }) => theme.color.mainBlueDM};
+
+    &:hover {
+      border-bottom: 1px solid ${({ theme }) => theme.color.mainBlueDM};
+    }
+  `}
 `;

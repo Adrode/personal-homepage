@@ -9,9 +9,11 @@ import {
 } from "./styled";
 
 export const GithubTile = () => (
-  <Container>
-    <Header>Header</Header>
-    <Description>
+  <Container $dark>
+    <Header $dark>
+      Header
+    </Header>
+    <Description $dark>
       Project description
       Project description
       Project description
@@ -22,15 +24,21 @@ export const GithubTile = () => (
       Project description
     </Description>
     <LinkContainer>
-      <LinkDescription>
+      <LinkDescription $dark>
         <span>Demo:</span>
         <span>Code:</span>
       </LinkDescription>
       <LinkURLContainer>
-        <LinkURL href={"https://www.google.com"}>
+        <LinkURL
+          $dark
+          href={"https://www.google.com"}
+        >
           https://link.demo.com
         </LinkURL>
-        <LinkURL href={"https://www.google.com"}>
+        <LinkURL
+          $dark
+          href={"https://www.google.com"}
+        >
           https://link.code.com
         </LinkURL>
       </LinkURLContainer>

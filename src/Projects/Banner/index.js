@@ -7,7 +7,7 @@ import {
 
 export const Banner = () => (
   <Container>
-    <Logo />
+    <Logo $dark />
     <Header>
       Portfolio
     </Header>

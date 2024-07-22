@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ReactComponent as GithubLogo } from "../../images/githubLogo.svg";
 
 export const Container = styled.section`
@@ -17,6 +17,10 @@ export const Logo = styled(GithubLogo)`
     width: 32px;
     height: 32px;
   }
+
+  ${({ $dark }) => $dark && css`
+    color: ${({ theme }) => theme.color.mainBlueDM};
+  `}
 `;
 
 export const Header = styled.h2`
