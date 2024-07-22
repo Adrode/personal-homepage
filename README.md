@@ -1,4 +1,4 @@
-#[https://adrode.github.io/personal-homepage/](DEMO)
+[DEMO](https://adrode.github.io/personal-homepage/)
 
 # Getting Started with Create React App
 
