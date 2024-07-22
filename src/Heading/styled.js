@@ -162,6 +162,22 @@ export const Button = styled.button`
     grid-gap: 12px;
     font-size: 18px;
   }
+
+  ${({ $dark }) => $dark && css`
+    background-color: ${({ theme }) => theme.color.mainBlueDM};
+
+    &:hover {
+      box-shadow: -2px -2px 0px 0px #6D93BE, 
+      2px 2px 0px 0px #6D93BE, 
+      -2px 2px 0px 0px #6D93BE, 
+      2px -2px 0px 0px #6D93BE;
+    };
+
+    &:active {
+      box-shadow: 0px 2px 0px 0px #14462033 inset;
+    }
+
+  `}
 `;
 
 export const ButtonIcon = styled.img``;

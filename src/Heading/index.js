@@ -34,7 +34,7 @@ export const Heading = () => (
         💻 I thrive on coding with React, turning concepts into dynamic user experiences!
         My joy comes from solving puzzles with state management and crafting responsive UIs. 🚀🔍
       </PersonalDescription>
-      <Button>
+      <Button $dark>
         <ButtonIcon
           src={message}
           alt={"."}
