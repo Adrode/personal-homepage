@@ -12,10 +12,11 @@ import {
 
 export const Footer = () => (
   <Container>
-    <Subheader>
+    <Subheader $dark>
       Let's talk!
     </Subheader>
     <EmailContact
+      $dark
       href={"mailto:adrianwo.work@gmail.com"}
       target={"_blank"}
       rel={"noreferrer noopener"}
@@ -33,21 +34,21 @@ export const Footer = () => (
         target={"_blank"}
         rel={"noreferrer noopener"}
       >
-        <GithubImage />
+        <GithubImage $dark />
       </SocialmediaLink>
       <SocialmediaLink
         href={"https://github.com/Adrode"}
         target={"_blank"}
         rel={"noreferrer noopener"}
       >
-        <LinkedinImage />
+        <LinkedinImage $dark />
       </SocialmediaLink>
       <SocialmediaLink
         href={"https://github.com/Adrode"}
         target={"_blank"}
         rel={"noreferrer noopener"}
       >
-        <InstagramImage />
+        <InstagramImage $dark />
       </SocialmediaLink>
     </SocialmediaContainer>
   </Container>

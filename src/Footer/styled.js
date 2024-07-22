@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ReactComponent as GithubLogo } from "../images/githubLogo.svg";
 import { ReactComponent as LinkedinLogo } from "../images/linkedinLogo.svg";
 import { ReactComponent as InstagramLogo } from "../images/instagramLogo.svg";
@@ -16,6 +16,10 @@ export const Subheader = styled.p`
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     margin-bottom: 12px;
   }
+
+  ${({ $dark }) => $dark && css`
+    color: ${({ theme }) => theme.color.white};
+  `}
 `;
 
 export const EmailContact = styled.a`
@@ -37,6 +41,12 @@ export const EmailContact = styled.a`
     margin-bottom: 12px;
     font-size: 18px;
   }
+
+  ${({ $dark }) => $dark && css`
+    &:hover {
+      color: ${({ theme }) => theme.color.mainBlueDM};
+    }
+  `}
 `;
 
 export const Description = styled.p`
@@ -78,6 +88,14 @@ export const GithubImage = styled(GithubLogo)`
     width: 32px;
     height: 32px;
   }
+
+  ${({ $dark }) => $dark && css`
+    color: ${({ theme }) => theme.color.white};
+
+    &:hover {
+      color: ${({ theme }) => theme.color.mainBlueDM};
+    }
+  `}
 `;
 
 export const LinkedinImage = styled(LinkedinLogo)`
@@ -93,6 +111,14 @@ export const LinkedinImage = styled(LinkedinLogo)`
     width: 32px;
     height: 32px;
   }
+
+  ${({ $dark }) => $dark && css`
+    color: ${({ theme }) => theme.color.white};
+
+    &:hover {
+      color: ${({ theme }) => theme.color.mainBlueDM};
+    }
+  `}
 `;
 
 export const InstagramImage = styled(InstagramLogo)`
@@ -108,4 +134,12 @@ export const InstagramImage = styled(InstagramLogo)`
     width: 32px;
     height: 32px;
   }
+
+  ${({ $dark }) => $dark && css`
+    color: ${({ theme }) => theme.color.white};
+
+    &:hover {
+      color: ${({ theme }) => theme.color.mainBlueDM};
+    }
+  `}
 `;
