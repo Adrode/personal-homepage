@@ -18,7 +18,9 @@ export const Heading = () => (
   <Header>
     <Image />
     <SwitchContainer>
-      <SwitchDescription>Dark mode off</SwitchDescription>
+      <SwitchDescription $dark>
+        Dark mode off
+      </SwitchDescription>
       <SwitchToggle
         src={themeToggle}
         alt="Switch toggle"
@@ -26,9 +28,9 @@ export const Heading = () => (
       </SwitchToggle>
     </SwitchContainer>
     <Description>
-      <Subheader>This is</Subheader>
+      <Subheader $dark>This is</Subheader>
       <Name>Adrian Woźniak</Name>
-      <PersonalDescription>
+      <PersonalDescription $dark>
         💻 I thrive on coding with React, turning concepts into dynamic user experiences!
         My joy comes from solving puzzles with state management and crafting responsive UIs. 🚀🔍
       </PersonalDescription>

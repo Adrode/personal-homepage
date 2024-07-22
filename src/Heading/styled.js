@@ -74,6 +74,10 @@ export const SwitchDescription = styled.span`
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     display: none;
   }
+
+  ${({ $dark }) => $dark && css`
+    color: ${({ theme }) => theme.color.white};
+  `}
 `;
 
 export const SwitchToggle = styled.img`
@@ -94,10 +98,13 @@ export const Subheader = styled.p`
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     margin-bottom: 8px; 
   }
+
+  ${({ $dark }) => $dark && css`
+    color: ${({ theme }) => theme.color.white};
+  `}
 `;
 
 export const Name = styled.h1`
-  color: ${({ theme }) => theme.color.blackText};
   font-weight: ${({ theme }) => theme.fontWeight.heavy};
   font-size: 38px;
   margin: 0 0 35px 0;
@@ -119,6 +126,10 @@ export const PersonalDescription = styled.p`
     margin-bottom: 24px;
     line-height: 23.8px;
   }
+
+  ${({ $dark }) => $dark && css`
+    color: ${({ theme }) => theme.color.white};
+  `}
 `;
 
 export const Button = styled.button`
