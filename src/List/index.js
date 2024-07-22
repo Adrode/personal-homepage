@@ -8,11 +8,11 @@ import {
 import listDisc from "../images/listDisc.svg";
 
 export const List = ({ headerText, headerEmoji, listContent }) => (
-  <Container>
+  <Container $dark>
     <Header>
       <span>{headerText}</span><span>{headerEmoji}</span>
     </Header>
-    <StyledList>
+    <StyledList $dark>
       {
         listContent.map((item, index) => (
           <StyledItem key={index}>
@@ -20,6 +20,10 @@ export const List = ({ headerText, headerEmoji, listContent }) => (
               src={listDisc}
               alt={""}
             />
+            {/*
+              do powyższego na pewno będzie potrzebny store, w zależności od stanu
+              dark lub jego braku będzie listDiscLM lub listDiscDM
+            */}
             <span>{item}</span>
           </StyledItem>
         ))

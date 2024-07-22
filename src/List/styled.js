@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.section`
   margin: 0 0 72px 0;
@@ -11,6 +11,10 @@ export const Container = styled.section`
     margin-bottom: 48px;
     padding: 16px;
   }
+
+  ${({ $dark }) => $dark && css`
+    background-color: ${({ theme }) => theme.color.semiDark};
+  `}
 `;
 
 export const Header = styled.h2`
@@ -59,6 +63,10 @@ export const StyledList = styled.ul`
 
     font-size: 14px;
   }
+
+  ${({ $dark }) => $dark && css`
+    color: ${({ theme }) => theme.color.white};
+  `}
 `;
 
 export const StyledItem = styled.li`
