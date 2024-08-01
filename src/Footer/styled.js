@@ -12,6 +12,7 @@ export const Subheader = styled.p`
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   color: ${({ theme }) => theme.color.textSecondary};
   text-transform: uppercase;
+  transition: all 0.15s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     margin-bottom: 12px;
@@ -30,6 +31,7 @@ export const EmailContact = styled.a`
   font-weight: ${({ theme }) => theme.fontWeight.heavy};
   color: inherit;
   text-decoration: none;
+  transition: all 0.15s linear;
 
   word-break: break-all;
 
@@ -79,6 +81,7 @@ export const GithubImage = styled(GithubLogo)`
   width: 48px;
   height: 48px;
   color: ${({ theme }) => theme.color.blackText};
+  transition: all 0.15s linear;
 
   &:hover {
     color: ${({ theme }) => theme.color.mainBlueLM};
@@ -102,6 +105,7 @@ export const LinkedinImage = styled(LinkedinLogo)`
   width: 48px;
   height: 48px;
   color: ${({ theme }) => theme.color.blackText};
+  transition: all 0.15s linear;
 
   &:hover {
     color: ${({ theme }) => theme.color.mainBlueLM};
@@ -125,6 +129,7 @@ export const InstagramImage = styled(InstagramLogo)`
   width: 48px;
   height: 48px;
   color: ${({ theme }) => theme.color.blackText};
+  transition: all 0.15s linear;
 
   &:hover {
     color: ${({ theme }) => theme.color.mainBlueLM};

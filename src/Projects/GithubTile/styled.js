@@ -5,6 +5,7 @@ export const Container = styled.section`
 
   border: 6px solid ${({ theme }) => theme.color.borderTransparent};
   box-shadow: 0px 16px 58px 0px #090A3308, 0px -2px 50px 0px #090A3305;
+  transition: all 0.15s linear;
 
   &:hover {
     border: 6px solid ${({ theme }) => theme.color.blueTransparent};
@@ -29,6 +30,7 @@ export const Header = styled.h3`
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   font-size: 24px;
   color: ${({ theme }) => theme.color.mainBlueLM};
+  transition: all 0.15s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     margin-bottom: 16px;
@@ -46,6 +48,7 @@ export const Description = styled.p`
   font-size: 18px;
   line-height: 25.2px;
   color: ${({ theme }) => theme.color.textSecondary};
+  transition: all 0.15s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     margin-bottom: 16px;
@@ -74,6 +77,7 @@ export const LinkDescription = styled.p`
 
   font-size: 18px;
   color: ${({ theme }) => theme.color.textSecondary};
+  transition: all 0.15s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     font-size: 14px;
@@ -98,6 +102,7 @@ export const LinkURL = styled.a`
 
   font-size: 18px;
   color: ${({ theme }) => theme.color.mainBlueLM};
+  transition: all 0.15s linear;
 
   &:hover {
     border-bottom: 1px solid ${({ theme }) => theme.color.mainBlueLM};

@@ -6,6 +6,7 @@ export const Container = styled.section`
   border-radius: 4px;
   background-color: ${({ theme }) => theme.color.white};
   box-shadow: 0px 16px 58px 0px #090A3308, 0px -2px 50px 0px #090A3305;
+  transition: all 0.15s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     margin-bottom: 48px;
@@ -51,6 +52,7 @@ export const StyledList = styled.ul`
   
   color: ${({ theme }) => theme.color.textSecondary};
   font-size: 18px;
+  transition: all 0.15s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
     grid-template-columns: repeat(2, 1fr);

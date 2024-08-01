@@ -70,6 +70,7 @@ export const SwitchDescription = styled.span`
   white-space: nowrap;
   font-size: 12px;
   text-transform: uppercase;
+  transition: all 0.15s linear;
   
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     display: none;
@@ -94,6 +95,7 @@ export const Subheader = styled.p`
   text-transform: uppercase;
   font-size: 12px;
   margin: 0 0 12px 0;
+  transition: all 0.15s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     margin-bottom: 8px; 
@@ -120,6 +122,7 @@ export const PersonalDescription = styled.p`
   font-size: 20px;
   line-height: 28px;
   margin: 0 0 32px 0;
+  transition: all 0.15s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     font-size: 17px;
@@ -146,6 +149,7 @@ export const Button = styled.button`
   padding: 12px 16px;
   border: 1px solid ${({ theme }) => theme.color.borderTransparent};
   border-radius: 4px;
+  transition: all 0.15s linear;
 
   &:hover {
     box-shadow: -2px -2px 0px 0px #8CC2FF,

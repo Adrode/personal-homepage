@@ -12,6 +12,7 @@ export const Logo = styled(GithubLogo)`
   width: 40px;
   height: 40px;
   color: ${({ theme }) => theme.color.mainBlueLM};
+  transition: all 0.15s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     width: 32px;

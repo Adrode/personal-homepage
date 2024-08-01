@@ -1,20 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Provider } from "react-redux";
+import { Provider, useSelector } from "react-redux";
 import { GlobalStyle } from './GlobalStyle';
 import { theme } from "./theme";
 import App from './App';
 import { ThemeProvider } from 'styled-components';
 import store from "./store";
+import { selectTheme } from './themeSlice';
+
+const Main = () => {
+  const themeDark = useSelector(selectTheme);
+
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyle
+        $dark={themeDark}
+      />
+      <App />
+    </ThemeProvider>
+  )
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle $dark />
-        <App />
-      </ThemeProvider>
+      <Main />
     </Provider>
   </React.StrictMode>
 );
