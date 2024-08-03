@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 
 export const useRepo = () => {
-  const token = "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";
-  const apiUrl = "https://api.github.com/users/Adrode/repos?access_token=";
-
   const [repoData, setRepoData] = useState({
     status: "loading",
   });
