@@ -4,8 +4,11 @@ import { Heading } from "./Heading";
 import { List } from "./List";
 import { Projects } from "./Projects";
 import { Footer } from "./Footer";
+import { useRepo } from "./api/useRepo";
 
 function App() {
+  const repoData = useRepo();
+  console.log(repoData);
   return (
     <Wrapper>
       <Heading />
