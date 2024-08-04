@@ -7,7 +7,7 @@ import {
   StyledDisc
 } from "./styled";
 import listDisc from "../images/listDisc.svg";
-import { selectTheme } from "../themeSlice";
+import { selectTheme } from "../Heading/themeSlice";
 
 export const List = ({ headerText, headerEmoji, listContent }) => {
   const themeDark = useSelector(selectTheme);

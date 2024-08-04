@@ -14,7 +14,7 @@ import {
   Button,
   ButtonIcon,
 } from "./styled";
-import { selectTheme, switchTheme } from "../themeSlice";
+import { selectTheme, switchTheme } from "./themeSlice";
 
 export const Heading = () => {
   const themeDark = useSelector(selectTheme);

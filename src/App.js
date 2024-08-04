@@ -2,13 +2,19 @@ import { skillset, nextToLearn } from "./utils/listsContent";
 import { Wrapper } from "./Wrapper/styled";
 import { Heading } from "./Heading";
 import { List } from "./List";
-import { Projects } from "./Projects";
+import { RepoList } from "./Projects/RepoList";
 import { Footer } from "./Footer";
-import { useRepo } from "./api/useRepo";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { fetchRepoData } from "./Projects/repoSlice";
 
 function App() {
-  const repoData = useRepo();
-  console.log(repoData);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchRepoData());
+  });
+
   return (
     <Wrapper>
       <Heading />
@@ -22,7 +28,7 @@ function App() {
         headerEmoji={"🚀"}
         listContent={nextToLearn}
       />
-      <Projects />
+      <RepoList />
       <Footer />
     </Wrapper>
   );

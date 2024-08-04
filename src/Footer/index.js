@@ -10,7 +10,7 @@ import {
   LinkedinImage,
   InstagramImage,
 } from "./styled";
-import { selectTheme } from "../themeSlice";
+import { selectTheme } from "../Heading/themeSlice";
 
 export const Footer = () => {
   const themeDark = useSelector(selectTheme);

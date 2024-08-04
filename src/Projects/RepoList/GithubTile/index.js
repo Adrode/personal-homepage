@@ -8,7 +8,7 @@ import {
   LinkURLContainer,
   LinkURL
 } from "./styled";
-import { selectTheme } from "../../themeSlice";
+import { selectTheme } from "../../../Heading/themeSlice";
 
 export const GithubTile = () => {
   const themeDark = useSelector(selectTheme);
