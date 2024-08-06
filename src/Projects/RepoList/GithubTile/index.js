@@ -10,7 +10,7 @@ import {
 } from "./styled";
 import { selectTheme } from "../../../Heading/themeSlice";
 
-export const GithubTile = () => {
+export const GithubTile = ({ projectName, projectDescription, projectDemoURL, projectCodeURL }) => {
   const themeDark = useSelector(selectTheme);
 
   return (
@@ -20,19 +20,12 @@ export const GithubTile = () => {
       <Header
         $dark={themeDark}
       >
-        Header
+        {projectName}
       </Header>
       <Description
         $dark={themeDark}
       >
-        Project description
-        Project description
-        Project description
-        Project description
-        Project description
-        Project description
-        Project description
-        Project description
+        {projectDescription}
       </Description>
       <LinkContainer>
         <LinkDescription
@@ -44,15 +37,15 @@ export const GithubTile = () => {
         <LinkURLContainer>
           <LinkURL
             $dark={themeDark}
-            href={"https://www.google.com"}
+            href={projectDemoURL}
           >
-            https://link.demo.com
+            {projectDemoURL}
           </LinkURL>
           <LinkURL
             $dark={themeDark}
-            href={"https://www.google.com"}
+            href={projectCodeURL}
           >
-            https://link.code.com
+            {projectCodeURL}
           </LinkURL>
         </LinkURLContainer>
       </LinkContainer>

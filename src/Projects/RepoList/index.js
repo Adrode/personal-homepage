@@ -13,11 +13,14 @@ export const RepoList = () => {
     <>
       <Banner />
       <Container>
-        <GithubTile />
-        <GithubTile />
-        <GithubTile />
-        <GithubTile />
-        <GithubTile />
+        {repoData.map((item) => (
+          <GithubTile
+            projectName={item.name}
+            projectDescription={item.description}
+            projectDemoURL={item.homepage}
+            projectCodeURL={item.html_url}
+          />
+        ))}
       </Container>
     </>
   )

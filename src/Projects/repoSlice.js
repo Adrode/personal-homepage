@@ -34,6 +34,12 @@ export const {
 } = repoSlice.actions;
 
 export const selectRepoData = state => selectRepoState(state).repos;
+export const selectRepoDataName = (state) => (
+  selectRepoData(state).name
+);
+export const selectRepoDataDescription = state => selectRepoData(state).description;
+export const selectRepoDataDemoURL = state => selectRepoData(state).homepage;
+export const selectRepoDataCodeURL = state => selectRepoData(state).html_url;
 
 export const selectLoadingStatus = state => selectRepoState(state).loading;
 
