@@ -3,6 +3,10 @@ import styled, { css } from "styled-components";
 export const Container = styled.section`
   padding: 56px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   border: 6px solid ${({ theme }) => theme.color.borderTransparent};
   box-shadow: 0px 16px 58px 0px #090A3308, 0px -2px 50px 0px #090A3305;
   transition: all 0.15s linear;

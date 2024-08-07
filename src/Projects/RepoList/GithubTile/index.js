@@ -38,12 +38,16 @@ export const GithubTile = ({ projectName, projectDescription, projectDemoURL, pr
           <LinkURL
             $dark={themeDark}
             href={projectDemoURL}
+            target={"_blank"}
+            rel={"noreferrer noopener"}
           >
             {projectDemoURL}
           </LinkURL>
           <LinkURL
             $dark={themeDark}
             href={projectCodeURL}
+            target={"_blank"}
+            rel={"noreferrer noopener"}
           >
             {projectCodeURL}
           </LinkURL>
