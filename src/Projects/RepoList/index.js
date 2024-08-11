@@ -20,6 +20,8 @@ export const RepoList = () => {
             projectDescription={item.description}
             projectDemoURL={item.homepage}
             projectCodeURL={item.html_url}
+            isDemoLinkAvailable={item.homepage !== ""}
+            isCodeLinkAvailable={item.html_url !== ""}
           />
         ))}
       </Container>

@@ -10,7 +10,14 @@ import {
 } from "./styled";
 import { selectTheme } from "../../../Heading/themeSlice";
 
-export const GithubTile = ({ projectName, projectDescription, projectDemoURL, projectCodeURL }) => {
+export const GithubTile = ({
+  projectName,
+  projectDescription,
+  projectDemoURL,
+  projectCodeURL,
+  isDemoLinkAvailable,
+  isCodeLinkAvailable
+}) => {
   const themeDark = useSelector(selectTheme);
 
   return (
@@ -31,26 +38,46 @@ export const GithubTile = ({ projectName, projectDescription, projectDemoURL, pr
         <LinkDescription
           $dark={themeDark}
         >
-          <span>Demo:</span>
-          <span>Code:</span>
+          {
+            isDemoLinkAvailable ?
+              <span>Demo:</span>
+              :
+              ""
+          }
+          {
+            isCodeLinkAvailable ?
+              <span>Code:</span>
+              :
+              ""
+          }
         </LinkDescription>
         <LinkURLContainer>
-          <LinkURL
-            $dark={themeDark}
-            href={projectDemoURL}
-            target={"_blank"}
-            rel={"noreferrer noopener"}
-          >
-            {projectDemoURL}
-          </LinkURL>
-          <LinkURL
-            $dark={themeDark}
-            href={projectCodeURL}
-            target={"_blank"}
-            rel={"noreferrer noopener"}
-          >
-            {projectCodeURL}
-          </LinkURL>
+          {
+            isDemoLinkAvailable ?
+              <LinkURL
+                $dark={themeDark}
+                href={projectDemoURL}
+                target={"_blank"}
+                rel={"noreferrer noopener"}
+              >
+                {projectDemoURL}
+              </LinkURL>
+              :
+              ""
+          }
+          {
+            isCodeLinkAvailable ?
+              <LinkURL
+                $dark={themeDark}
+                href={projectCodeURL}
+                target={"_blank"}
+                rel={"noreferrer noopener"}
+              >
+                {projectCodeURL}
+              </LinkURL>
+              :
+              ""
+          }
         </LinkURLContainer>
       </LinkContainer>
     </Container>

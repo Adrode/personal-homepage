@@ -103,6 +103,7 @@ export const LinkURLContainer = styled.div`
 export const LinkURL = styled.a`
   text-decoration: none;
   border-bottom: 1px solid ${({ theme }) => theme.color.blueTransparent};
+  padding-bottom: 2px;
 
   font-size: 18px;
   color: ${({ theme }) => theme.color.mainBlueLM};
