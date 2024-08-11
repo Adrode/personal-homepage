@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { ReactComponent as ListDisc } from "../images/listDisc.svg";
 
 export const Container = styled.section`
   margin: 0 0 72px 0;
@@ -79,7 +80,10 @@ export const StyledItem = styled.li`
   justify-content: start;
 `;
 
-export const StyledDisc = styled.img`
-  width: 9px;
-  height: 9px;
+export const StyledDisc = styled(ListDisc)`
+  color: ${({ theme }) => theme.color.mainBlueLM};
+
+  ${({ $dark }) => $dark && css`
+    color: ${({ theme }) => theme.color.mainBlueDM};
+  `}
 `;
