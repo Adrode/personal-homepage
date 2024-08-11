@@ -1,4 +1,6 @@
-import themeToggle from "../images/theme-toggle.svg";
+import { ReactComponent as ThemeToggleLM } from "../images/themeToggleLM.svg";
+import { ReactComponent as ThemeToggleDM } from "../images/themeToggleDM.svg";
+import { ReactComponent as MailIcon } from "../images/mailIcon.svg";
 import { useSelector, useDispatch } from "react-redux";
 import {
   Header,
@@ -13,7 +15,6 @@ import {
   LinkButton,
 } from "./styled";
 import { selectTheme, switchTheme } from "./themeSlice";
-import { ReactComponent as MailIcon } from "../images/mailIcon.svg";
 
 export const Heading = () => {
   const themeDark = useSelector(selectTheme);
@@ -26,14 +27,16 @@ export const Heading = () => {
         <SwitchDescription
           $dark={themeDark}
         >
-          Dark mode off
+          Dark mode {themeDark ? "on" : "off"}
         </SwitchDescription>
-        <SwitchToggle
-          onClick={() => dispatch(switchTheme())}
-          src={themeToggle}
-          alt="Switch toggle"
-        >
-        </SwitchToggle>
+        {themeDark ?
+          <ThemeToggleDM
+            onClick={() => dispatch(switchTheme())}
+          />
+          :
+          <ThemeToggleLM
+            onClick={() => dispatch(switchTheme())}
+          />}
       </SwitchContainer>
       <Description>
         <Subheader

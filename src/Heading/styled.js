@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import profileImage from "../images/profile-image.jpg";
+import profileImage from "../images/profileImage.jpg";
 
 export const Header = styled.header`
   display: grid;
@@ -79,10 +79,6 @@ export const SwitchDescription = styled.span`
   ${({ $dark }) => $dark && css`
     color: ${({ theme }) => theme.color.white};
   `}
-`;
-
-export const SwitchToggle = styled.img`
-  height: 26px;
 `;
 
 export const Description = styled.section`
