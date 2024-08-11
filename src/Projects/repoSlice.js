@@ -3,12 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const repoSlice = createSlice({
   name: 'repo',
   initialState: {
-    repos: [
-      {
-        id: 0,
-        kekw: "kekw",
-      }
-    ],
+    repos: [],
     loading: false,
   },
   reducers: {
