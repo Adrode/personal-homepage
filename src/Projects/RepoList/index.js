@@ -15,6 +15,7 @@ export const RepoList = () => {
       <Container>
         {repoData.map((item) => (
           <GithubTile
+            key={item.id}
             projectName={item.name}
             projectDescription={item.description}
             projectDemoURL={item.homepage}

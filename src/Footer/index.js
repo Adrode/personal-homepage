@@ -7,7 +7,7 @@ import {
   SocialmediaContainer,
   SocialmediaLink,
   GithubImage,
-  LinkedinImage,
+  FacebookImage,
   InstagramImage,
 } from "./styled";
 import { selectTheme } from "../Heading/themeSlice";
@@ -27,6 +27,7 @@ export const Footer = () => {
         href={"mailto:adrianwo.work@gmail.com"}
         target={"_blank"}
         rel={"noreferrer noopener"}
+        title={"Submit your proposals by email"}
       >
         adrianwo.work@gmail.com
       </EmailContact>
@@ -40,24 +41,27 @@ export const Footer = () => {
           href={"https://github.com/Adrode"}
           target={"_blank"}
           rel={"noreferrer noopener"}
+          title={"Feel free and check out my social media"}
         >
           <GithubImage
             $dark={themeDark}
           />
         </SocialmediaLink>
         <SocialmediaLink
-          href={"https://github.com/Adrode"}
+          href={"https://www.facebook.com/adrianwozniak20"}
           target={"_blank"}
           rel={"noreferrer noopener"}
+          title={"Feel free and check out my social media"}
         >
-          <LinkedinImage
+          <FacebookImage
             $dark={themeDark}
           />
         </SocialmediaLink>
         <SocialmediaLink
-          href={"https://github.com/Adrode"}
+          href={"https://www.instagram.com/adrianwozniak20/"}
           target={"_blank"}
           rel={"noreferrer noopener"}
+          title={"Feel free and check out my social media"}
         >
           <InstagramImage
             $dark={themeDark}

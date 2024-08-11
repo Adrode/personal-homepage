@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { ReactComponent as GithubLogo } from "../images/githubLogo.svg";
-import { ReactComponent as LinkedinLogo } from "../images/linkedinLogo.svg";
+import { ReactComponent as FacebookLogo } from "../images/facebookLogo.svg";
 import { ReactComponent as InstagramLogo } from "../images/instagramLogo.svg";
 
 export const Container = styled.footer``;
@@ -101,7 +101,7 @@ export const GithubImage = styled(GithubLogo)`
   `}
 `;
 
-export const LinkedinImage = styled(LinkedinLogo)`
+export const FacebookImage = styled(FacebookLogo)`
   width: 48px;
   height: 48px;
   color: ${({ theme }) => theme.color.blackText};

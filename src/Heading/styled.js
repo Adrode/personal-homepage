@@ -135,7 +135,8 @@ export const PersonalDescription = styled.p`
   `}
 `;
 
-export const Button = styled.button`
+export const LinkButton = styled.a`
+  max-width: fit-content;
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
@@ -145,6 +146,7 @@ export const Button = styled.button`
   color: ${({ theme }) => theme.color.white};
   background-color: ${({ theme }) => theme.color.mainBlueLM};
   text-transform: capitalize;
+  text-decoration: none;
 
   padding: 12px 16px;
   border: 1px solid ${({ theme }) => theme.color.borderTransparent};
@@ -180,8 +182,5 @@ export const Button = styled.button`
     &:active {
       box-shadow: 0px 2px 0px 0px #14462033 inset;
     }
-
   `}
 `;
-
-export const ButtonIcon = styled.img``;

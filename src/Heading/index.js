@@ -1,5 +1,4 @@
 import themeToggle from "../images/theme-toggle.svg";
-import message from "../images/message.svg";
 import { useSelector, useDispatch } from "react-redux";
 import {
   Header,
@@ -11,10 +10,10 @@ import {
   Subheader,
   Name,
   PersonalDescription,
-  Button,
-  ButtonIcon,
+  LinkButton,
 } from "./styled";
 import { selectTheme, switchTheme } from "./themeSlice";
+import { ReactComponent as MailIcon } from "../images/mailIcon.svg";
 
 export const Heading = () => {
   const themeDark = useSelector(selectTheme);
@@ -49,18 +48,19 @@ export const Heading = () => {
           💻 I thrive on coding with React, turning concepts into dynamic user experiences!
           My joy comes from solving puzzles with state management and crafting responsive UIs. 🚀🔍
         </PersonalDescription>
-        <Button
+        <LinkButton
           $dark={themeDark}
+          href={"mailto:adrianwo.work@gmail.com"}
+          target={"_blank"}
+          rel={"noreferrer noopener"}
+          title={"Submit your proposals by email"}
         >
-          <ButtonIcon
-            src={message}
-            alt={"."}
-          />
+          <MailIcon />
           <span>
             Hire me
           </span>
-        </Button>
+        </LinkButton>
       </Description>
-    </Header>
+    </Header >
   )
 };
