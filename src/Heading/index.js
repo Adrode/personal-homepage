@@ -37,6 +37,10 @@ export const Heading = () => {
           <ThemeToggleLM
             onClick={() => dispatch(switchTheme())}
           />}
+          {/*
+            Switch triggeruje nowe pobranie z API
+            Może kwestia dodać sagę?
+          */}
       </SwitchContainer>
       <Description>
         <Subheader

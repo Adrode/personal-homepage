@@ -31,6 +31,7 @@ export const EmailContact = styled.a`
   font-weight: ${({ theme }) => theme.fontWeight.heavy};
   color: inherit;
   text-decoration: none;
+  transition: all 0.15s linear;
 
   word-break: break-all;
 

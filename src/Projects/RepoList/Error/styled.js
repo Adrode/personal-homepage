@@ -48,6 +48,7 @@ export const LinkButton = styled.a`
   background-color: ${({ theme }) => theme.color.mainBlueLM};
   text-transform: capitalize;
   text-decoration: none;
+  transition: all 0.15s linear;
 
   padding: 12px 16px;
   border: 1px solid ${({ theme }) => theme.color.borderTransparent};
