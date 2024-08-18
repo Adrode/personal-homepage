@@ -5,6 +5,7 @@ const repoSlice = createSlice({
   initialState: {
     repos: [],
     loading: false,
+    error: false,
   },
   reducers: {
     fetchRepoData: state => {
@@ -16,6 +17,7 @@ const repoSlice = createSlice({
     },
     fetchRepoDataError: state => {
       state.loading = false;
+      state.error = true;
     }
   }
 });
@@ -37,5 +39,6 @@ export const selectRepoDataDemoURL = state => selectRepoData(state).homepage;
 export const selectRepoDataCodeURL = state => selectRepoData(state).html_url;
 
 export const selectLoadingStatus = state => selectRepoState(state).loading;
+export const selectErrorStatus = state => selectRepoState(state).error;
 
 export default repoSlice.reducer;
