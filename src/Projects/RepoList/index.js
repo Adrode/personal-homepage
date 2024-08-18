@@ -6,6 +6,7 @@ import { Banner } from "./Banner";
 import { useSelector } from "react-redux";
 import { selectLoadingStatus, selectRepoData } from "../repoSlice";
 import { Loading } from "./Loading";
+import { Error } from "./Error";
 
 export const RepoList = () => {
   const repoData = useSelector(selectRepoData);

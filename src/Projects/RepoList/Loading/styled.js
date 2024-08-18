@@ -3,7 +3,7 @@ import { ReactComponent as IconSpinner } from "../../../images/iconSpinner.svg";
 
 export const Container = styled.section`
   margin-top: 88px;
-  margin-bottom: 120px;
+  margin-bottom: 140px;
 
   display: flex;
   flex-direction: column;
@@ -13,7 +13,14 @@ export const Container = styled.section`
 `;
 
 export const Description = styled.p`
+  margin: 0;
+
   font-size: 20px;
+  text-align: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    font-size: 17px;
+  }
 `;
 
 export const Spinner = styled(IconSpinner)`
@@ -43,6 +50,10 @@ export const Spinner = styled(IconSpinner)`
       color: ${({ theme }) => theme.color.mainBlueDM};
     }
   `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    max-height: 100px;
+  }
 
 `;
 

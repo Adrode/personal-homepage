@@ -41,7 +41,7 @@ export const Footer = () => {
           href={"https://github.com/Adrode"}
           target={"_blank"}
           rel={"noreferrer noopener"}
-          title={"Feel free and check out my social media"}
+          title={"Feel free and check out my projects"}
         >
           <GithubImage
             $dark={themeDark}
