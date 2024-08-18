@@ -147,7 +147,6 @@ export const LinkButton = styled.a`
   padding: 12px 16px;
   border: 1px solid ${({ theme }) => theme.color.borderTransparent};
   border-radius: 4px;
-  transition: all 0.15s linear;
 
   &:hover {
     box-shadow: -2px -2px 0px 0px #8CC2FF,

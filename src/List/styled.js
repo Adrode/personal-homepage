@@ -53,7 +53,6 @@ export const StyledList = styled.ul`
   
   color: ${({ theme }) => theme.color.textSecondary};
   font-size: 18px;
-  transition: all 0.15s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
     grid-template-columns: repeat(2, 1fr);

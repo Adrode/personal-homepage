@@ -4,27 +4,33 @@ import {
 import { GithubTile } from "./GithubTile";
 import { Banner } from "./Banner";
 import { useSelector } from "react-redux";
-import { selectRepoData } from "../repoSlice";
+import { selectLoadingStatus, selectRepoData } from "../repoSlice";
+import { Loading } from "./Loading";
 
 export const RepoList = () => {
   const repoData = useSelector(selectRepoData);
-  console.log(repoData);
+  const loadingStatus = useSelector(selectLoadingStatus);
   return (
     <>
       <Banner />
-      <Container>
-        {repoData.map((item) => (
-          <GithubTile
-            key={item.id}
-            projectName={item.name}
-            projectDescription={item.description}
-            projectDemoURL={item.homepage}
-            projectCodeURL={item.html_url}
-            isDemoLinkAvailable={item.homepage !== ""}
-            isCodeLinkAvailable={item.html_url !== ""}
-          />
-        ))}
-      </Container>
+      {
+        loadingStatus ?
+          <Loading />
+        :
+          <Container>
+            {repoData.map((item) => (
+              <GithubTile
+                key={item.id}
+                projectName={item.name}
+                projectDescription={item.description}
+                projectDemoURL={item.homepage}
+                projectCodeURL={item.html_url}
+                isDemoLinkAvailable={item.homepage !== ""}
+                isCodeLinkAvailable={item.html_url !== ""}
+              />
+            ))}
+          </Container>
+      }
     </>
   )
 };
