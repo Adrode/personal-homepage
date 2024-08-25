@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     dispatch(fetchRepoData());
-  }, []);
+  }, [dispatch]);
 
   return (
     <Wrapper>
