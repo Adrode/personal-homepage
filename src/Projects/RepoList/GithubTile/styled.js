@@ -5,7 +5,7 @@ export const Container = styled.section`
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  //justify-content: space-between;
 
   border: 6px solid ${({ theme }) => theme.color.borderTransparent};
   box-shadow: 0px 16px 58px 0px #090A3308, 0px -2px 50px 0px #090A3305;
@@ -66,6 +66,8 @@ export const Description = styled.p`
 `;
 
 export const LinkContainer = styled.div`
+  margin-top: auto;
+  
   display: grid;
   grid-template-columns: repeat(2, auto);
   justify-content: start;
