@@ -6,7 +6,7 @@ import { theme } from "./theme";
 import App from './App';
 import { ThemeProvider } from 'styled-components';
 import store from "./store";
-import { selectTheme } from './Heading/themeSlice';
+import { selectTheme } from './features/themeSlice';
 
 const Main = () => {
   const themeDark = useSelector(selectTheme);

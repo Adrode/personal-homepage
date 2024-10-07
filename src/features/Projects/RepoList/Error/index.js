@@ -6,7 +6,7 @@ import {
   Description,
   LinkButton,
 } from "./styled";
-import { selectTheme } from "../../../Heading/themeSlice";
+import { selectTheme } from "../../../themeSlice";
 
 export const Error = () => {
   const themeDark = useSelector(selectTheme);

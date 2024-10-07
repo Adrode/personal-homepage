@@ -1,12 +1,12 @@
 import { skillset, nextToLearn } from "./utils/listsContent";
-import { Wrapper } from "./Wrapper/styled";
-import { Heading } from "./Heading";
-import { List } from "./List";
-import { RepoList } from "./Projects/RepoList";
-import { Footer } from "./Footer";
+import { Wrapper } from "./common/Wrapper/styled";
+import { Heading } from "./common/Heading";
+import { List } from "./features/List";
+import { RepoList } from "./features/Projects/RepoList";
+import { Footer } from "./common/Footer";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
-import { fetchRepoData } from "./Projects/repoSlice";
+import { fetchRepoData } from "./features/Projects/repoSlice";
 
 function App() {
   const dispatch = useDispatch();

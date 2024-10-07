@@ -1,6 +1,6 @@
-import { ReactComponent as ThemeToggleLM } from "../images/themeToggleLM.svg";
-import { ReactComponent as ThemeToggleDM } from "../images/themeToggleDM.svg";
-import { ReactComponent as MailIcon } from "../images/mailIcon.svg";
+import { ReactComponent as ThemeToggleLM } from "../../images/themeToggleLM.svg";
+import { ReactComponent as ThemeToggleDM } from "../../images/themeToggleDM.svg";
+import { ReactComponent as MailIcon } from "../../images/mailIcon.svg";
 import { useSelector, useDispatch } from "react-redux";
 import {
   Header,
@@ -14,7 +14,7 @@ import {
   PersonalDescription,
   LinkButton,
 } from "./styled";
-import { selectTheme, switchTheme } from "./themeSlice";
+import { selectTheme, switchTheme } from "../../features/themeSlice";
 
 export const Heading = () => {
   const themeDark = useSelector(selectTheme);

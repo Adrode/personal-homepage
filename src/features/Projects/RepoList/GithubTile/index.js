@@ -8,7 +8,7 @@ import {
   LinkURLContainer,
   LinkURL
 } from "./styled";
-import { selectTheme } from "../../../Heading/themeSlice";
+import { selectTheme } from "../../../themeSlice";
 
 export const GithubTile = ({
   projectName,

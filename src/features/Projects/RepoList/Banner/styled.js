@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as GithubLogo } from "../../../images/githubLogo.svg";
+import { ReactComponent as GithubLogo } from "../../../../images/githubLogo.svg";
 
 export const Container = styled.section`
   display: flex;

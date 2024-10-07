@@ -1,6 +1,6 @@
 import { Container, Description, Spinner } from "./styled.js";
 import { useSelector } from "react-redux";
-import { selectTheme } from "../../../Heading/themeSlice.js";
+import { selectTheme } from "../../../themeSlice";
 
 export const Loading = ({ dark }) => {
   const themeDark = useSelector(selectTheme);

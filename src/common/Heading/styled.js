@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import profileImage from "../images/profileImage.jpg";
+import profileImage from "../../images/profileImage.jpg";
 
 export const Header = styled.header`
   display: grid;

@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as DangerIcon } from "../../../images/dangerIcon.svg";
+import { ReactComponent as DangerIcon } from "../../../../images/dangerIcon.svg";
 
 export const Container = styled.section`
   margin-top: 88px;

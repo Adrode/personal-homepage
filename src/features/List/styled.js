@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as ListDisc } from "../images/listDisc.svg";
+import { ReactComponent as ListDisc } from "../../images/listDisc.svg";
 
 export const Container = styled.section`
   margin: 0 0 72px 0;

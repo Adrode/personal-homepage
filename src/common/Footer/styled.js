@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as GithubLogo } from "../images/githubLogo.svg";
-import { ReactComponent as FacebookLogo } from "../images/facebookLogo.svg";
-import { ReactComponent as InstagramLogo } from "../images/instagramLogo.svg";
+import { ReactComponent as GithubLogo } from "../../images/githubLogo.svg";
+import { ReactComponent as FacebookLogo } from "../../images/facebookLogo.svg";
+import { ReactComponent as InstagramLogo } from "../../images/instagramLogo.svg";
 
 export const Container = styled.footer``;
 

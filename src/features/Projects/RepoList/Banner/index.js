@@ -5,7 +5,7 @@ import {
   Header,
   Subheader,
 } from "./styled";
-import { selectTheme } from "../../../Heading/themeSlice";
+import { selectTheme } from "../../../themeSlice";
 
 export const Banner = () => {
   const themeDark = useSelector(selectTheme);

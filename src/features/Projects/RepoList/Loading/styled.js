@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as IconSpinner } from "../../../images/iconSpinner.svg";
+import { ReactComponent as IconSpinner } from "../../../../images/iconSpinner.svg";
 
 export const Container = styled.section`
   margin-top: 88px;
