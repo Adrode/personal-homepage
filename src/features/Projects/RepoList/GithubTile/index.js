@@ -59,6 +59,7 @@ export const GithubTile = ({
                 href={projectDemoURL}
                 target={"_blank"}
                 rel={"noreferrer noopener"}
+                title={projectDemoURL}
               >
                 {projectDemoURL}
               </LinkURL>
@@ -72,6 +73,7 @@ export const GithubTile = ({
                 href={projectCodeURL}
                 target={"_blank"}
                 rel={"noreferrer noopener"}
+                title={projectCodeURL}
               >
                 {projectCodeURL}
               </LinkURL>

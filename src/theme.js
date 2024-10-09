@@ -3,6 +3,7 @@ export const theme = {
     white: "#FFFFFF",
     borderTransparent: "#D1D5DA4D",
     textSecondary: "#6E7E91",
+    lightGrey: "#E5E5E5",
     semiGrey: "#D1D5DA1A",
     mainBlueLM: "#0366D6",
     mainBlueDM: "#2188FF",

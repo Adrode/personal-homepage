@@ -1,13 +1,13 @@
-import { ReactComponent as ThemeToggleLM } from "../../images/themeToggleLM.svg";
-import { ReactComponent as ThemeToggleDM } from "../../images/themeToggleDM.svg";
 import { ReactComponent as MailIcon } from "../../images/mailIcon.svg";
+import { ReactComponent as SunIcon } from "../../images/sun.svg";
 import { useSelector, useDispatch } from "react-redux";
 import {
   Header,
   Image,
   SwitchContainer,
   SwitchDescription,
-  SwitchToggle,
+  SwitchButton,
+  SwitchButtonSunIconConhtainer,
   Description,
   Subheader,
   Name,
@@ -29,18 +29,27 @@ export const Heading = () => {
         >
           Dark mode {themeDark ? "on" : "off"}
         </SwitchDescription>
-        {themeDark ?
+        <SwitchButton
+          onClick={() => dispatch(switchTheme())}
+          $dark={themeDark}
+        >
+          <SwitchButtonSunIconConhtainer
+            $dark={themeDark}
+          >
+            <SunIcon />
+          </SwitchButtonSunIconConhtainer>
+        </SwitchButton>
+
+
+        {/* {themeDark ?
           <ThemeToggleDM
             onClick={() => dispatch(switchTheme())}
           />
           :
           <ThemeToggleLM
             onClick={() => dispatch(switchTheme())}
-          />}
-          {/*
-            Switch triggeruje nowe pobranie z API
-            Może kwestia dodać sagę?
-          */}
+          />
+        } */}
       </SwitchContainer>
       <Description>
         <Subheader

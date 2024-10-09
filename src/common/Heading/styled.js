@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import profileImage from "../../images/profileImage.jpg";
+import { ReactComponent as SunIcon } from "../../images/sun.svg";
 
 export const Header = styled.header`
   display: grid;
@@ -78,6 +79,48 @@ export const SwitchDescription = styled.span`
 
   ${({ $dark }) => $dark && css`
     color: ${({ theme }) => theme.color.white};
+  `}
+`;
+
+export const SwitchButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  width: 48px;
+  height: 26px;
+  background-color: ${({ theme }) => theme.color.lightGrey};
+
+  border: 1px solid ${({ theme }) => theme.color.textSecondary};
+  border-radius: 13px / 50%;
+
+  ${({ $dark }) => $dark && css`
+    background-color: ${({ theme }) => theme.color.semiDark};
+    border-color: ${({ theme }) => theme.color.white};
+  `}
+`;
+
+export const SwitchButtonSunIconConhtainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  left: -10px;
+
+  width: 20px;
+  height: 20px;
+  background-color: ${({ theme }) => theme.color.textSecondary};
+  color: ${({ theme }) => theme.color.white};
+  border-radius: 50%; 
+
+  transition: all 0.15s linear;
+  
+  ${({ $dark }) => $dark && css`
+    transform: translateX(20px) rotate(180deg);
+    background-color: ${({ theme }) => theme.color.white};
+    color: ${({ theme }) => theme.color.blackText};
   `}
 `;
 
