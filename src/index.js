@@ -16,7 +16,7 @@ const Main = () => {
       <GlobalStyle
         $dark={themeDark}
       />
-      <App />
+      <App $FOUCremover />
     </ThemeProvider>
   )
 };

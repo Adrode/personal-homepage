@@ -16,7 +16,11 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.15s linear;
+    transition: none;
+    
+    ${({ $FOUCremover }) => $FOUCremover && css`
+      transition: all 0.15s linear;
+    `}
 
     ${({ $dark }) => $dark && css`
       color: ${({ theme }) => theme.color.white};

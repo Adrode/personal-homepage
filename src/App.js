@@ -9,6 +9,10 @@ import { useEffect } from "react";
 import { fetchRepoData } from "./features/Projects/repoSlice";
 
 function App() {
+  /* useEffect(() => {
+    document.body.classList.add("theme-transition");
+  }, []); */
+
   const dispatch = useDispatch();
 
   useEffect(() => {
