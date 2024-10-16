@@ -39,17 +39,6 @@ export const Heading = () => {
             <SunIcon />
           </SwitchButtonSunIconConhtainer>
         </SwitchButton>
-
-
-        {/* {themeDark ?
-          <ThemeToggleDM
-            onClick={() => dispatch(switchTheme())}
-          />
-          :
-          <ThemeToggleLM
-            onClick={() => dispatch(switchTheme())}
-          />
-        } */}
       </SwitchContainer>
       <Description>
         <Subheader
